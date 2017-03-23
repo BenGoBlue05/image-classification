@@ -11786,7 +11786,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -11835,15 +11835,6 @@ div#notebook {
 <div class="output_area">
 <div class="prompt"></div>
 
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>CIFAR-10 Dataset: 171MB [00:19, 8.96MB/s]                              
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-<div class="prompt"></div>
-
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>All files found!
 </pre>
@@ -11880,7 +11871,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -12077,7 +12068,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">normalize</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -12134,7 +12125,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">one_hot_encode</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -12196,7 +12187,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12223,7 +12214,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
@@ -12280,7 +12271,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="nn">tf</span>
@@ -12292,7 +12283,7 @@ height=250
 <span class="sd">    : return: Tensor for image input.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">image_shape</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;x&quot;</span><span class="p">)</span>
 
 
 <span class="k">def</span> <span class="nf">neural_net_label_input</span><span class="p">(</span><span class="n">n_classes</span><span class="p">):</span>
@@ -12302,7 +12293,7 @@ height=250
 <span class="sd">    : return: Tensor for label input.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="n">n_classes</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;y&quot;</span><span class="p">)</span>
 
 
 <span class="k">def</span> <span class="nf">neural_net_keep_prob_input</span><span class="p">():</span>
@@ -12311,7 +12302,7 @@ height=250
 <span class="sd">    : return: Tensor for keep probability.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">placeholder</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;keep_prob&quot;</span><span class="p">)</span>
 
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -12324,6 +12315,24 @@ height=250
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Image Input Tests Passed.
+Label Input Tests Passed.
+Keep Prob Tests Passed.
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12354,7 +12363,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">conv2d_maxpool</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">conv_num_outputs</span><span class="p">,</span> <span class="n">conv_ksize</span><span class="p">,</span> <span class="n">conv_strides</span><span class="p">,</span> <span class="n">pool_ksize</span><span class="p">,</span> <span class="n">pool_strides</span><span class="p">):</span>
@@ -12369,7 +12378,15 @@ height=250
 <span class="sd">    : return: A tensor that represents convolution and max pooling of x_tensor</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="k">return</span> <span class="kc">None</span> 
+    <span class="n">input_depth</span> <span class="o">=</span> <span class="n">x_tensor</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">filter_weights</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">truncated_normal</span><span class="p">((</span><span class="o">*</span><span class="n">conv_ksize</span><span class="p">,</span> <span class="n">input_depth</span><span class="p">,</span> <span class="n">conv_num_outputs</span><span class="p">)))</span>
+    <span class="n">filter_bias</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="n">conv_num_outputs</span><span class="p">))</span>
+    
+    <span class="n">conv_layer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">conv2d</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">filter_weights</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">*</span><span class="n">conv_strides</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;SAME&#39;</span><span class="p">)</span>
+    <span class="n">conv_layer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">bias_add</span><span class="p">(</span><span class="n">conv_layer</span><span class="p">,</span> <span class="n">filter_bias</span><span class="p">)</span>
+    <span class="n">conv_layer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">conv_layer</span><span class="p">)</span>
+                                
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">max_pool</span><span class="p">(</span><span class="n">conv_layer</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">*</span><span class="n">pool_ksize</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">*</span><span class="n">pool_strides</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;SAME&#39;</span><span class="p">)</span> 
 
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -12379,6 +12396,22 @@ height=250
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12395,7 +12428,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">flatten</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">):</span>
@@ -12405,7 +12438,7 @@ height=250
 <span class="sd">    : return: A tensor of size (Batch Size, Flattened Image Size).</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">x_tensor</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">*</span> <span class="n">x_tensor</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">value</span> <span class="o">*</span> <span class="n">x_tensor</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="p">])</span>
 
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -12415,6 +12448,22 @@ height=250
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12431,7 +12480,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fully_conn</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">):</span>
@@ -12442,7 +12491,13 @@ height=250
 <span class="sd">    : return: A 2-D tensor where the second dimension is num_outputs.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="k">return</span> <span class="kc">None</span>
+    <span class="n">num_inputs</span> <span class="o">=</span> <span class="n">x_tensor</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">W</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="n">num_inputs</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">]))</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="n">num_outputs</span><span class="p">]))</span>
+    
+    <span class="n">fc_layer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">W</span><span class="o">.</span><span class="n">get_shape</span><span class="p">()</span><span class="o">.</span><span class="n">as_list</span><span class="p">()[</span><span class="mi">0</span><span class="p">]])</span>
+    <span class="n">fc_layer</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">fc_layer</span><span class="p">,</span> <span class="n">W</span><span class="p">),</span> <span class="n">b</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">nn</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">fc_layer</span><span class="p">)</span>
 
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -12452,6 +12507,22 @@ height=250
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12469,7 +12540,7 @@ height=250
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">output</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">):</span>
@@ -12480,7 +12551,10 @@ height=250
 <span class="sd">    : return: A 2-D tensor where the second dimension is num_outputs.</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># TODO: Implement Function</span>
-    <span class="k">return</span> <span class="kc">None</span>
+    <span class="n">num_inputs</span> <span class="o">=</span> <span class="n">x_tensor</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">W</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="n">num_inputs</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">]))</span>
+    <span class="n">b</span> <span class="o">=</span> <span class="n">tf</span><span class="o">.</span><span class="n">Variable</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">random_normal</span><span class="p">([</span><span class="n">num_outputs</span><span class="p">]))</span>
+    <span class="k">return</span> <span class="n">tf</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">tf</span><span class="o">.</span><span class="n">matmul</span><span class="p">(</span><span class="n">x_tensor</span><span class="p">,</span> <span class="n">W</span><span class="p">),</span> <span class="n">b</span><span class="p">)</span>
 
 
 <span class="sd">&quot;&quot;&quot;</span>
@@ -12490,6 +12564,22 @@ height=250
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+<div class="prompt"></div>
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Tests Passed
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12527,28 +12617,30 @@ height=250
     <span class="c1"># TODO: Apply 1, 2, or 3 Convolution and Max Pool layers</span>
     <span class="c1">#    Play around with different number of outputs, kernel size and stride</span>
     <span class="c1"># Function Definition from Above:</span>
-    <span class="c1">#    conv2d_maxpool(x_tensor, conv_num_outputs, conv_ksize, conv_strides, pool_ksize, pool_strides)</span>
-    
-
+    <span class="n">conv1</span> <span class="o">=</span> <span class="n">conv2d_maxpool</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">conv_num_outputs</span><span class="p">,</span> <span class="n">conv_ksize</span><span class="p">,</span> <span class="n">conv_strides</span><span class="p">,</span> <span class="n">pool_ksize</span><span class="p">,</span> <span class="n">pool_strides</span><span class="p">)</span>
+    <span class="n">conv2</span> <span class="o">=</span> <span class="n">conv2d_maxpool</span><span class="p">(</span><span class="n">conv1</span><span class="p">,</span> <span class="n">conv_num_outputs</span><span class="p">,</span> <span class="n">conv_ksize</span><span class="p">,</span> <span class="n">conv_strides</span><span class="p">,</span> <span class="n">pool_ksize</span><span class="p">,</span> <span class="n">pool_strides</span><span class="p">)</span>
+    <span class="n">conv3</span> <span class="o">=</span> <span class="n">conv2d_maxpool</span><span class="p">(</span><span class="n">conv2</span><span class="p">,</span> <span class="n">conv_num_outputs</span><span class="p">,</span> <span class="n">conv_ksize</span><span class="p">,</span> <span class="n">conv_strides</span><span class="p">,</span> <span class="n">pool_ksize</span><span class="p">,</span> <span class="n">pool_strides</span><span class="p">)</span>
     <span class="c1"># TODO: Apply a Flatten Layer</span>
     <span class="c1"># Function Definition from Above:</span>
-    <span class="c1">#   flatten(x_tensor)</span>
+    <span class="n">fc1</span> <span class="o">=</span> <span class="n">flatten</span><span class="p">(</span><span class="n">conv3</span><span class="p">)</span>
     
 
     <span class="c1"># TODO: Apply 1, 2, or 3 Fully Connected Layers</span>
     <span class="c1">#    Play around with different number of outputs</span>
     <span class="c1"># Function Definition from Above:</span>
-    <span class="c1">#   fully_conn(x_tensor, num_outputs)</span>
+    <span class="n">fc1</span> <span class="o">=</span> <span class="n">fully_conn</span><span class="p">(</span><span class="n">fc1</span><span class="p">,</span> <span class="p">)</span>
+    <span class="n">fc2</span> <span class="o">=</span> <span class="n">fully_conn</span><span class="p">(</span><span class="n">fc2</span><span class="p">,</span> <span class="p">)</span>
+    <span class="n">fc3</span> <span class="o">=</span> <span class="n">fully_conn</span><span class="p">(</span><span class="n">fc3</span><span class="p">,</span> <span class="p">)</span>
+    
+    
     
     
     <span class="c1"># TODO: Apply an Output Layer</span>
     <span class="c1">#    Set this to the number of classes</span>
     <span class="c1"># Function Definition from Above:</span>
-    <span class="c1">#   output(x_tensor, num_outputs)</span>
-    
     
     <span class="c1"># TODO: return output</span>
-    <span class="k">return</span> <span class="kc">None</span>
+    <span class="k">return</span> <span class="n">output</span><span class="p">(</span><span class="n">fc3</span><span class="p">,</span> <span class="n">num_outputs</span><span class="p">)</span>
 
 
 <span class="sd">&quot;&quot;&quot;</span>
